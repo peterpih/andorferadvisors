@@ -3,15 +3,24 @@ source 'https://rubygems.org'
 ruby '2.2.3'			# line needed by Heroku
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '4.2.4'
+gem 'rails', '4.2.5'
+gem 'actionmailer', '4.2.5'
+gem 'actionpack', '4.2.5'
+gem 'actionview', '4.2.5'
+gem 'activejob', '4.2.5'
+gem 'activemodel', '4.2.5'
+gem 'activesupport', '4.2.5'
+
 # Use postgresql as the database for Active Record
-gem 'pg'
+gem 'pg', '0.18.3'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
 # Use CoffeeScript for .coffee assets and views
 gem 'coffee-rails', '~> 4.1.0'
+gem 'coffee-script', '2.4.1'
+gem 'coffee-script-source', '1.10.0'
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
 
@@ -29,13 +38,13 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 
 # Use Unicorn as the app server
 # gem 'unicorn'
-gem 'puma'
+gem 'puma', '2.15.3'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
-  gem 'byebug'
+  gem 'byebug', '8.1.0'
 end
 
 group :development do
@@ -46,7 +55,10 @@ group :development do
   gem 'spring'
 end
 
-gem 'haml'
+
+gem 'haml', '4.0.7'
+gem 'i18n', '0.7.0'
+
 
 gem 'rails_12factor', '~> 0.0.3', group: :production	# for heroku
 
