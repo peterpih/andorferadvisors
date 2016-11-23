@@ -13,6 +13,7 @@ Rails.application.routes.draw do
 
   get '/test' => 'tests#index', as: :test
   get '/blog' => 'blogs#index', as: :blog
+  get '/mvp' => 'mvps#index', as: :mvp
   # get '/blog' => 'blog#index', as: :blog2
   # get "/blog/index"
 
