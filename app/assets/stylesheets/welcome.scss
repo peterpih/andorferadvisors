@@ -2,10 +2,10 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-img{
-	border-style: dashed;
-	border-color: red;
-}
+// img{
+// 	border-style: dashed;
+// 	border-color: red;
+// }
 
 .qrcode {
 	height: 50;
@@ -13,11 +13,13 @@ img{
 	
 }
 
-#qrcode_png {
+.qrcode_png{
+	display: block;
+	margin: 0 auto;
 	width: 150px;
 	height: 150px;
 	border-style: solid;
-	border-color: green;
+	border-color: black;
 }
 
 p {

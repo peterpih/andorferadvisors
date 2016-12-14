@@ -1,0 +1,53 @@
+
+//
+// Sooner Baptist
+//
+
+.nopadmargin{ margin: 0; padding: 0; }
+.nomargin{ margin: 0; }
+.nopad{ padding: 0; }
+.noborder {border: none; }
+
+.autowidth{ width: auto; }
+.nobullet{ list-style: none; }
+
+.background_image{
+  background: image-url("brown-crop.jpg") no-repeat center center fixed;
+  background-size: cover;  // cover;
+  width: 100%;
+  // padding: 0;
+  // margin: 0;
+}
+
+.blackborder{ border: 1px solid black; }
+.whiteborder{ border: 1px solid white; }
+.greyborder{  border: 1px solid lightgrey; }
+.redborder{ border: 1px solid red; }
+.greenborder{ border: 1px solid green; }
+.blueborder{ border: 1px solid blue; }
+.yellowborder{ border: 1px solid yellow; }
+.orangeborder{ border: 1px solid orange; }
+
+.pinkborder{ border-style: solid; border-color: pink; }
+.blackfill{ background-color: black; }
+.whitefill{ background-color: white; }
+.redfill{ background-color: red; }
+.greenfill{ background-color: green; }
+.bluefill{ background-color: blue; }
+.lightbluefill{ background-color: lightblue; }
+.yellowfill{ background-color: yellow; }
+.orangefill{ background-color: orange; }
+.pinkfill{ background-color: pink; }
+.greyfill{ background-color: rgb(200,200,200); }
+
+.lighttextbackground{ background-color: rgba(255, 255, 255, .40); }
+
+.shrinkwrap{ display:table; }
+.shrinkwrapcenter{ display:table; margin: 0 auto;}
+
+.objcenter{ display:block; margin: 0 auto; }
+
+.pad1{ padding: 1em; }
+.pad2{ padding: 2em; }
+
+.center{ text-align: center; }
