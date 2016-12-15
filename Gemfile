@@ -1,26 +1,26 @@
 source 'https://rubygems.org'
 
-ruby '2.2.3'			# line needed by Heroku
+ruby '2.3.3'			# line needed by Heroku
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '4.2.5'
-gem 'actionmailer', '4.2.5'
-gem 'actionpack', '4.2.5'
-gem 'actionview', '4.2.5'
-gem 'activejob', '4.2.5'
-gem 'activemodel', '4.2.5'
-gem 'activesupport', '4.2.5'
+gem 'rails', '~>5.0.0'
+# gem 'actionmailer', '4.2.5'
+# gem 'actionpack', '4.2.5'
+# gem 'actionview', '4.2.5'
+# gem 'activejob', '4.2.5'
+# gem 'activemodel', '4.2.5'
+# gem 'activesupport', '4.2.5'
 
 # Use postgresql as the database for Active Record
-gem 'pg', '0.18.3'
+gem 'pg', '~>0.18.4'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
 # Use CoffeeScript for .coffee assets and views
 gem 'coffee-rails', '~> 4.1.0'
-gem 'coffee-script', '2.4.1'
-gem 'coffee-script-source', '1.10.0'
+  # gem 'coffee-script', '2.4.1'
+  # gem 'coffee-script-source', '1.10.0'
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
 
@@ -33,14 +33,22 @@ gem 'jbuilder', '~> 2.0'
 # bundle exec rake doc:rails generates the API under doc/api.
 gem 'sdoc', '~> 0.4.0', group: :doc
 
-gem 'rake', '10.5.0'
+  # gem 'rake', '10.5.0'
 
 # Use ActiveModel has_secure_password
-# gem 'bcrypt', '~> 3.1.7'
+gem 'bcrypt', '~> 3.1.7'
 
 # Use Unicorn as the app server
 # gem 'unicorn'
-gem 'puma', '2.15.3'
+gem 'puma' #, '2.15.3'
+gem 'thin'
+gem 'haml'
+gem 'i18n'
+
+gem 'sprockets-rails'
+gem 'bootstrap-sass', '~> 3.2.0'
+gem 'autoprefixer-rails'
+
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
@@ -57,10 +65,4 @@ group :development do
   gem 'spring'
 end
 
-
-gem 'haml', '4.0.7'
-gem 'i18n', '0.7.0'
-
-
 gem 'rails_12factor', '~> 0.0.3', group: :production	# for heroku
-
