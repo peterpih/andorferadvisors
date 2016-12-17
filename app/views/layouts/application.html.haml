@@ -2,10 +2,12 @@
 %html
   %head
     =render '/layouts/header'
+  -if (@odd_day>0) then
+    %body.background_image_bluegreen
+  -else
+    %body.background_image_brown
 
-  %body.background_image
-
-    = yield
+  = yield
 
   %footer
 

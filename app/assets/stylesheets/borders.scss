@@ -1,6 +1,6 @@
 
 //
-// Sooner Baptist
+// Andorfer Advisors
 //
 
 .nopadmargin{ margin: 0; padding: 0; }
@@ -11,7 +11,15 @@
 .autowidth{ width: auto; }
 .nobullet{ list-style: none; }
 
-.background_image{
+.background_image_bluegreen{
+  background: image-url("bluegreen-crop.jpg") no-repeat center center fixed;
+  background-size: cover;  // cover;
+  width: 100%;
+  // padding: 0;
+  // margin: 0;
+}
+
+.background_image_brown{
   background: image-url("brown-crop.jpg") no-repeat center center fixed;
   background-size: cover;  // cover;
   width: 100%;
@@ -44,6 +52,7 @@
 
 .shrinkwrap{ display:table; }
 .shrinkwrapcenter{ display:table; margin: 0 auto;}
+.shrinkwrapcenterhv{ display:table; margin: auto auto;}
 
 .objcenter{ display:block; margin: 0 auto; }
 
@@ -51,3 +60,10 @@
 .pad2{ padding: 2em; }
 
 .center{ text-align: center; }
+
+.fullwindowheight{ height: 100vh; }
+
+
+.parentabc{ padding: 5% 0; }
+
+.childabc{ padding: 10% 0; }
