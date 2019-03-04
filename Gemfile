@@ -12,11 +12,10 @@ gem 'rails', '~>5.0.7.1'
 # gem 'activesupport', '4.2.5'
 
 # Use postgresql as the database for Active Record
-gem 'pg', '~>0.18.4'
+gem 'pg', '1.1.4'  #'~>0.18.4'
 # Use SCSS for stylesheets
 #-- gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
-#-- gem 'uglifier', '>= 1.3.0'
 # Use CoffeeScript for .coffee assets and views
 #-- gem 'coffee-rails', '~> 4.1.0'
 #gem "nokogiri", '>= 1.8.5'
