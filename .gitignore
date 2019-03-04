@@ -18,3 +18,4 @@ app/assets/.DS_Store
 /log/*
 !/log/.keep
 /tmp
+node_modules/

@@ -13,8 +13,9 @@ gem 'rails', '~>5.0.7.1'
 
 # Use postgresql as the database for Active Record
 gem 'pg', '1.1.4'  #'~>0.18.4'
+gem 'coffee-rails'
 # Use SCSS for stylesheets
-#-- gem 'sass-rails', '~> 5.0'
+gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
 # Use CoffeeScript for .coffee assets and views
 #-- gem 'coffee-rails', '~> 4.1.0'
@@ -25,9 +26,9 @@ gem 'pg', '1.1.4'  #'~>0.18.4'
 # gem 'therubyracer', platforms: :ruby
 
 # Use jquery as the JavaScript library
-#-- gem 'jquery-rails'
+gem 'jquery-rails'
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
-#-- gem 'turbolinks'
+gem 'turbolinks'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 #-- gem 'jbuilder', '~> 2.0'
 # bundle exec rake doc:rails generates the API under doc/api.
@@ -46,7 +47,7 @@ gem 'pg', '1.1.4'  #'~>0.18.4'
 #-- gem 'i18n'
 
 #-- gem 'sprockets-rails'
-#-- gem 'bootstrap-sass', '~> 3.2.0'
+gem 'bootstrap-sass' #, '~> 3.2.0'
 #-- gem 'autoprefixer-rails'
 
 # Use Capistrano for deployment
