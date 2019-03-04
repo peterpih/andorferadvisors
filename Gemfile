@@ -41,10 +41,10 @@ gem 'turbolinks'
 
 # Use Unicorn as the app server
 # gem 'unicorn'
-#-- gem 'puma' #, '2.15.3'
-#-- gem 'thin'
-#-- gem 'haml'
-#-- gem 'i18n'
+gem 'puma' #, '2.15.3'
+gem 'thin'
+gem 'haml'
+gem 'i18n'
 
 #-- gem 'sprockets-rails'
 gem 'bootstrap-sass' #, '~> 3.2.0'
