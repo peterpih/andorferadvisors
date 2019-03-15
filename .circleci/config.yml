@@ -1,0 +1,12 @@
+version: 2
+jobs:
+  build:
+    docker:
+      - image: circleci/ruby:latest
+    steps:
+      - checkout
+      - run: 
+          name: "test message"
+          command: echo "CircleCI 2.0 Test"
+      - run:
+          command: ruby --version
