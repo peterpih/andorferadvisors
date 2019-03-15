@@ -8,7 +8,9 @@ jobs:
       - run: 
           name: "test message"
           command: echo "CircleCI 2.0 Test"
+      - run:
           command: heroku maintenance:on --app andorferadvisors
       - run:
           command: ruby --version
+      - run:
           command: heroku maintenance:off --app andorferadvisors
