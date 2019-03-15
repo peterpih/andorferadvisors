@@ -6,7 +6,7 @@ ruby '2.6.0'			# line needed by Heroku
 gem 'rails', '~>5.0.7.1'
 # gem 'actionmailer', '4.2.5'
 # gem 'actionpack', '4.2.5'
-# gem 'actionview', '4.2.5'
+gem "actionview", ">= 5.0.7.2"
 # gem 'activejob', '4.2.5'
 # gem 'activemodel', '4.2.5'
 # gem 'activesupport', '4.2.5'
