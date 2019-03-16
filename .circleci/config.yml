@@ -15,7 +15,7 @@ jobs:
           # command: heroku maintenance:on --app andorferadvisors
       - run:
           name: "Load heroku CLI"
-          command: heroku buildpacks:add https://github.com/heroku/heroku-buildpack-cli -a andorferadvisors
+          #command: heroku buildpacks:add https://github.com/heroku/heroku-buildpack-cli -a andorferadvisors
       - run: 
           name: "end message"
           command: echo "Finished CircleCI 2.0 Test"
