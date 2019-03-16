@@ -9,4 +9,11 @@ jobs:
           name: "test message"
           command: echo "CircleCI 2.0 Test"
       - run:
+          name: "Check Ruby version"
           command: ruby --version
+          # command: heroku maintenance:on --app andorferadvisors
+      #- run:
+          #command: heroku maintenance:off --app andorferadvisors
+      - run: 
+          name: "end message"
+          command: echo "Finished CircleCI 2.0 Test"
