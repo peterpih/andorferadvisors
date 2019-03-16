@@ -2,18 +2,17 @@ version: 2
 jobs:
   build:
     docker:
-      - image: circleci/ruby:latest
+      - image: buildpack-deps:trusty
+      #- image: circleci/ruby:latest
     steps:
       - checkout
       - run: 
           name: "test message"
           command: echo "CircleCI 2.0 Test"
-      - run:
-          name: "Check Ruby version"
-          command: ruby --version
-          # command: heroku maintenance:on --app andorferadvisors
       #- run:
-          #command: heroku maintenance:off --app andorferadvisors
+          #name: "Check Ruby version"
+          #command: ruby --version
+          # command: heroku maintenance:on --app andorferadvisors
       - run: 
           name: "end message"
           command: echo "Finished CircleCI 2.0 Test"
