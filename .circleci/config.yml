@@ -2,7 +2,8 @@ version: 2
 jobs:
   build:
     docker:
-      - image: circleci/ruby:latest
+      - image: buildpack-deps:trusty
+      #- image: circleci/ruby:latest
     steps:
       - checkout
       - run: 
