@@ -13,10 +13,10 @@ jobs:
   deployment:
   staging:
     commands:
-      - |
+      - |2
         cat >~/.netrc <<EOF
         machine api.heroku.com
-          login $HEROKU_EMAIL
+        login $HEROKU_EMAIL
           password $HEROKU_TOKEN
         machine git.heroku.com
           login $HEROKU_EMAIL
@@ -29,6 +29,6 @@ jobs:
       #- heroku scale worker=x --app foo-bar-123
       - heroku maintenance:off --app andorferadvisors
 
-    - run: 
+      - run: 
         name: "end message"
         command: echo "Finished CircleCI 2.0 Test"
