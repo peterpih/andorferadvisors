@@ -9,22 +9,26 @@ jobs:
       - run: 
           name: "start message"
           command: echo "CircleCI 2.0 Test"
-      - run:
-          name: "Processing"
-          command:
-              - |
-                  cat >~/.netrc <<EOF
-                  machine api.heroku.com
-                  login $HEROKU_EMAIL
-                  password $HEROKU_TOKEN
-                  machine git.heroku.com
-                  login $HEROKU_EMAIL
-                  password $HEROKU_TOKEN
-                EOF
-              - chmod 600 ~/.netrc # Heroku cli complains about permissions without this
-              - heroku maintenance:on --app andorferadvisors
-              - heroku run rake db:migrate --app andorferadvisors
-              - heroku maintenance:off --app andorferadvisors
-      - run: 
-          name: "end message"
-          command: echo "Finished CircleCI 2.0 Test"
+          
+  deployment:
+  staging:
+    commands:
+      - |
+        cat >~/.netrc <<EOF
+        machine api.heroku.com
+          login $HEROKU_EMAIL
+          password $HEROKU_TOKEN
+        machine git.heroku.com
+          login $HEROKU_EMAIL
+          password $HEROKU_TOKEN
+        EOF
+      - chmod 600 ~/.netrc # Heroku cli complains about permissions without this
+      - heroku maintenance:on --app andorferadvisors
+      #- git push git@heroku.com:foo-bar-123.git $CIRCLE_SHA1:refs/heads/master
+      - heroku run rake db:migrate --app andorferadvisors
+      #- heroku scale worker=x --app foo-bar-123
+      - heroku maintenance:off --app andorferadvisors
+
+    - run: 
+        name: "end message"
+        command: echo "Finished CircleCI 2.0 Test"
